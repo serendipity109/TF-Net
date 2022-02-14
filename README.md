@@ -7,3 +7,7 @@ All video rights are reserved by the owner.
 
 [real.mp4](https://www.youtube.com/watch?v=h45KOn8UgpY&t=1s&ab_channel=TODAY%E7%9C%8B%E4%B8%96%E7%95%8C)
 [fake.mp4](https://www.youtube.com/watch?v=cQ54GDm1eL0&ab_channel=BuzzFeedVideo)
+
+# Usage
+Pull the docker image from dockerhub.
+$docker pull jayda960825/tf-net
