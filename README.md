@@ -8,6 +8,12 @@ All video rights are reserved by the owner.
 [real.mp4](https://www.youtube.com/watch?v=h45KOn8UgpY&t=1s&ab_channel=TODAY%E7%9C%8B%E4%B8%96%E7%95%8C)
 [fake.mp4](https://www.youtube.com/watch?v=cQ54GDm1eL0&ab_channel=BuzzFeedVideo)
 
-# Usage
-Pull the docker image from dockerhub.
+## Usage
+Pull the docker image from docker hub.
+```console
 $docker pull jayda960825/tf-net
+```
+Clone this repository and change the directories in docker-compose.yml (~/docker_oup/video, ~/docker_oup/output ~/docker_oup/aftExt) to your local directories and run.
+```console
+$docker-compose up
+```
