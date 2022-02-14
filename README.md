@@ -19,5 +19,5 @@ Clone this repository and change the directories in docker-compose.yml (~/docker
 $ docker-compose up
 ```
 ### GCP VM
-Contact me through jayda960825@gmail.com to open up a firewall rule to access the api.
+Contact me through jayda960825@gmail.com to open up a firewall rule to access the api.  
 Send a post request to http://34.135.228.79:8087/predict
