@@ -11,9 +11,9 @@ All video rights are reserved by the owner.
 ## Usage
 Pull the docker image from docker hub.
 ```console
-$docker pull jayda960825/tf-net
+$ docker pull jayda960825/tf-net
 ```
 Clone this repository and change the directories in docker-compose.yml (~/docker_oup/video, ~/docker_oup/output ~/docker_oup/aftExt) to your local directories and run.
 ```console
-$docker-compose up
+$ docker-compose up
 ```
