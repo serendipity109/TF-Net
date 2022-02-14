@@ -1,7 +1,7 @@
 # TF-Net
 TF-Net is a deepfake detection model, considering features from self-supervised template maps, frequency domain by the DCT module, sequential correlation from the GRU module.
 ![img](https://github.com/serendipity109/TF-Net/blob/master/diagram.PNG)
-Feel free to try the colab [demo](https://colab.research.google.com/drive/16OSk-F4Mv-E_v994SiXiM0mgQjKhz_Ip?usp=sharing).
+Feel free to try the colab [demo](https://colab.research.google.com/drive/16OSk-F4Mv-E_v994SiXiM0mgQjKhz_Ip?usp=sharing) or read the [paper](https://hdl.handle.net/11296/7bcg4q).
 
 All video rights are reserved by the owner. 
 
