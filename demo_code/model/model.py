@@ -9,7 +9,7 @@ import math
 import os
 import sys
 
-
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 class DCT(nn.Module):
     def __init__(self, map_size=10):
         super().__init__()
@@ -33,12 +33,12 @@ class DCT(nn.Module):
                     m[i, j] += 1
                 else:
                     h[i, j] += 1
-        return l.cuda(), m.cuda(), h.cuda()
+        return l.to(device), m.to(device), h.to(device)
 
     def init_fw(self):
-        self.lfw = torch.Tensor(self.map_size, self.map_size).cuda() # 左上角
-        self.mfw = torch.Tensor(self.map_size, self.map_size).cuda()
-        self.hfw = torch.Tensor(self.map_size, self.map_size).cuda()
+        self.lfw = torch.Tensor(self.map_size, self.map_size).to(device) # 左上角
+        self.mfw = torch.Tensor(self.map_size, self.map_size).to(device)
+        self.hfw = torch.Tensor(self.map_size, self.map_size).to(device)
         nn.init.xavier_normal_(self.lfw)
         nn.init.xavier_normal_(self.mfw)
         nn.init.xavier_normal_(self.hfw)
@@ -273,8 +273,8 @@ class GRU(nn.Module):
         self.sigmoid = nn.Sigmoid()
         self.init_hidden()
     def init_hidden(self):
-        self.h1=torch.Tensor(3*2, self.batch_size, 512).cuda()
-        self.h2=torch.Tensor(1, self.batch_size, 512).cuda()
+        self.h1=torch.Tensor(3*2, self.batch_size, 512).to(device)
+        self.h2=torch.Tensor(1, self.batch_size, 512).to(device)
         nn.init.xavier_normal_(self.h1); nn.init.xavier_normal_(self.h2)
     def forward(self, x):
         out, hn = self.gru1(x, self.h1)

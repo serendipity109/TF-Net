@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  tf-net:
+    image: jayda960825/tf-net
+    stdin_open: true
+    tty: true
+    restart: always
+    ports: 
+      - 8087:8087
+    volumes:
+      - ~/docker_oup/video:/app/video
+      - ~/docker_oup/output:/app/output
+      - ~/docker_oup/aftExt:/app/faces/tmp

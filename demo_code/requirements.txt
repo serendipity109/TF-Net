@@ -1,0 +1,11 @@
+# torch
+# torchvision
+opencv-python-headless
+tqdm
+scikit-image
+matplotlib
+natsort
+fastapi 
+uvicorn
+pydantic
+wget
